@@ -34,64 +34,72 @@
   <servlet-class>web.servlet.TeamsServlet</servlet-class>
  </servlet>
  <servlet>
- 	<servlet-name>TeamServlet</servlet-name>
- 	<display-name>TeamServlet</display-name>
- 	<description></description>
- 	<servlet-class>web.servlet.TeamServlet</servlet-class>
+  <servlet-name>TeamServlet</servlet-name>
+  <display-name>TeamServlet</display-name>
+  <servlet-class>web.servlet.TeamServlet</servlet-class>
  </servlet>
  <servlet>
- 	<servlet-name>LogoutServlet</servlet-name>
- 	<display-name>LogoutServlet</display-name>
- 	<description></description>
- 	<servlet-class>web.security.LogoutServlet</servlet-class>
+  <servlet-name>LogoutServlet</servlet-name>
+  <display-name>LogoutServlet</display-name>
+  <servlet-class>web.security.LogoutServlet</servlet-class>
  </servlet>
  <servlet>
- 	<servlet-name>HomeServlet</servlet-name>
- 	<display-name>HomeServlet</display-name>
- 	<description></description>
- 	<servlet-class>web.servlet.HomeServlet</servlet-class>
+  <servlet-name>HomeServlet</servlet-name>
+  <display-name>HomeServlet</display-name>
+  <servlet-class>web.servlet.HomeServlet</servlet-class>
  </servlet>
  <servlet>
- 	<servlet-name>EditTeamServlet</servlet-name>
- 	<display-name>EditTeamServlet</display-name>
- 	<description></description>
- 	<servlet-class>web.servlet.EditTeamServlet</servlet-class>
+  <servlet-name>EditTeamServlet</servlet-name>
+  <display-name>EditTeamServlet</display-name>
+  <servlet-class>web.servlet.EditTeamServlet</servlet-class>
  </servlet>
  <servlet>
- 	<servlet-name>kickUserFromTeamServler</servlet-name>
- 	<display-name>kickUserFromTeamServler</display-name>
- 	<description></description>
- 	<servlet-class>web.servlet.KickUserTeamServlet</servlet-class>
+  <servlet-name>kickUserTeamServler</servlet-name>
+  <display-name>kickUserTeamServler</display-name>
+  <servlet-class>web.servlet.KickUserTeamServlet</servlet-class>
  </servlet>
  <servlet>
- 	<servlet-name>AddTaskServlet</servlet-name>
- 	<display-name>AddTaskServlet</display-name>
- 	<description></description>
- 	<servlet-class>web.servlet.AddTaskServlet</servlet-class>
+  <servlet-name>AddTaskServlet</servlet-name>
+  <display-name>AddTaskServlet</display-name>
+  <servlet-class>web.servlet.AddTaskServlet</servlet-class>
  </servlet>
  <servlet>
- 	<servlet-name>TaskStateServlet</servlet-name>
- 	<display-name>TaskStateServlet</display-name>
- 	<description></description>
- 	<servlet-class>web.servlet.TaskStateServlet</servlet-class>
+  <servlet-name>TaskStateServlet</servlet-name>
+  <display-name>TaskStateServlet</display-name>
+  <servlet-class>web.servlet.TaskStateServlet</servlet-class>
  </servlet>
  <servlet>
- 	<servlet-name>DeleteTaskServlet</servlet-name>
- 	<display-name>DeleteTaskServlet</display-name>
- 	<description></description>
- 	<servlet-class>web.servlet.DeleteTaskServlet</servlet-class>
+  <servlet-name>DeleteTaskServlet</servlet-name>
+  <display-name>DeleteTaskServlet</display-name>
+  <servlet-class>web.servlet.DeleteTaskServlet</servlet-class>
  </servlet>
  <servlet>
- 	<servlet-name>EditTask</servlet-name>
- 	<display-name>EditTask</display-name>
- 	<description></description>
- 	<servlet-class>web.servlet.EditTaskServlet</servlet-class>
+  <servlet-name>EditTask</servlet-name>
+  <display-name>EditTask</display-name>
+  <servlet-class>web.servlet.EditTaskServlet</servlet-class>
  </servlet>
  <servlet>
- 	<servlet-name>TaskServlet</servlet-name>
- 	<display-name>TaskServlet</display-name>
+  <servlet-name>TaskServlet</servlet-name>
+  <display-name>TaskServlet</display-name>
+  <servlet-class>web.servlet.TaskServlet</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>EditProfileServlet</servlet-name>
+ 	<display-name>EditProfileServlet</display-name>
  	<description></description>
- 	<servlet-class>web.servlet.TaskServlet</servlet-class>
+ 	<servlet-class>web.servlet.EditProfileServlet</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>AchievementsServlet</servlet-name>
+ 	<display-name>AchievementsServlet</display-name>
+ 	<description></description>
+ 	<servlet-class>web.servlet.AchievementsServlet</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>AddExp</servlet-name>
+ 	<display-name>AddExp</display-name>
+ 	<description></description>
+ 	<servlet-class>web.servlet.AddExp</servlet-class>
  </servlet>
  <servlet-mapping>
   <servlet-name>AddUserServlet</servlet-name>
@@ -109,49 +117,56 @@
   <servlet-name>AddTeamServlet</servlet-name>
   <url-pattern>/app/addTeam</url-pattern>
  </servlet-mapping>
-
  <servlet-mapping>
   <servlet-name>TeamsServlet</servlet-name>
   <url-pattern>/app/teams</url-pattern>
  </servlet-mapping>
  <servlet-mapping>
- 	<servlet-name>TeamServlet</servlet-name>
- 	<url-pattern>/app/team</url-pattern>
+  <servlet-name>TeamServlet</servlet-name>
+  <url-pattern>/app/team</url-pattern>
  </servlet-mapping>
  <servlet-mapping>
- 	<servlet-name>LogoutServlet</servlet-name>
- 	<url-pattern>/app/logout</url-pattern>
+  <servlet-name>LogoutServlet</servlet-name>
+  <url-pattern>/app/logout</url-pattern>
  </servlet-mapping>
  <servlet-mapping>
- 	<servlet-name>HomeServlet</servlet-name>
- 	<url-pattern>/app/home</url-pattern>
+  <servlet-name>HomeServlet</servlet-name>
+  <url-pattern>/app/home</url-pattern>
  </servlet-mapping>
  <servlet-mapping>
- 	<servlet-name>EditTeamServlet</servlet-name>
- 	<url-pattern>/app/editTeam</url-pattern>
+  <servlet-name>EditTeamServlet</servlet-name>
+  <url-pattern>/app/editTeam</url-pattern>
  </servlet-mapping>
  <servlet-mapping>
- 	<servlet-name>kickUserFromTeamServler</servlet-name>
- 	<url-pattern>/app/kickUser</url-pattern>
+  <servlet-name>AddTaskServlet</servlet-name>
+  <url-pattern>/app/addTask</url-pattern>
  </servlet-mapping>
  <servlet-mapping>
- 	<servlet-name>AddTaskServlet</servlet-name>
- 	<url-pattern>/app/addTask</url-pattern>
+  <servlet-name>TaskStateServlet</servlet-name>
+  <url-pattern>/app/taskState</url-pattern>
  </servlet-mapping>
  <servlet-mapping>
- 	<servlet-name>TaskStateServlet</servlet-name>
- 	<url-pattern>/app/taskState</url-pattern>
+  <servlet-name>DeleteTaskServlet</servlet-name>
+  <url-pattern>/app/deleteTask</url-pattern>
  </servlet-mapping>
  <servlet-mapping>
- 	<servlet-name>DeleteTaskServlet</servlet-name>
- 	<url-pattern>/app/deleteTask</url-pattern>
+  <servlet-name>EditTask</servlet-name>
+  <url-pattern>/app/editTask</url-pattern>
  </servlet-mapping>
  <servlet-mapping>
- 	<servlet-name>EditTask</servlet-name>
- 	<url-pattern>/app/editTask</url-pattern>
+  <servlet-name>TaskServlet</servlet-name>
+  <url-pattern>/app/task</url-pattern>
  </servlet-mapping>
  <servlet-mapping>
- 	<servlet-name>TaskServlet</servlet-name>
- 	<url-pattern>/app/task</url-pattern>
+ 	<servlet-name>EditProfileServlet</servlet-name>
+ 	<url-pattern>/app/editProfile</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>AchievementsServlet</servlet-name>
+ 	<url-pattern>/app/achievements</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>AddExp</servlet-name>
+ 	<url-pattern>/app/exp</url-pattern>
  </servlet-mapping>
 </web-app>

@@ -2,6 +2,7 @@ package web.servlet;
 
 
 import web.beans.Task;
+import web.beans.User;
 import web.dao.TaskDao;
 import web.dao.UserDao;
 import web.security.UserDetails;
@@ -36,7 +37,15 @@ public class DoingServlet extends HttpServlet {
     	HttpSession session = request.getSession();
     	Session hSession = HibernateUtil.getSessionFactory().openSession();
     	UserDetails userDetails = (UserDetails) session.getAttribute("userDetails");
-    	request.setAttribute("tasks", taskDao.filterTasksByState((ArrayList<Task>) taskDao.getPersonalTasks(userDetails.getUserId()),"DOING"));
+    	User user = hSession.find(User.class, userDetails.getUserId());
+    	
+		ArrayList<Task> tasks = new ArrayList<Task>();
+		for(Task t : user.getOwnedTasks()){
+			  t.setLeft(taskDao.daysLeft(t));
+			  tasks.add(t);
+		}
+		
+    	request.setAttribute("tasks", taskDao.filterTasksByState((ArrayList<Task>) tasks,"DOING"));
     	hSession.close();
     	this.getServletContext().getRequestDispatcher( "/doing.jsp" ).forward( request, response );
     }

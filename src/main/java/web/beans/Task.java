@@ -22,6 +22,9 @@ public class Task {
     private String state;
 
     private String category;
+    
+    @Transient
+    private int left;
 
     ///////////////////////////////////// Relationships ///////////////////////////////////////////////
 
@@ -140,4 +143,13 @@ public class Task {
         this.sourceTeam = sourceTeam;
     }
 
+	public int getLeft() {
+		return left;
+	}
+
+	public void setLeft(int left) {
+		this.left = left;
+	}
+
+    
 }

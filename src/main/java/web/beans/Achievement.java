@@ -16,9 +16,7 @@ public class Achievement {
 
     private String description;
 
-    private int value;
-
-    private byte[] icon;
+    private String icon;
 
 
 
@@ -32,15 +30,18 @@ public class Achievement {
     public Achievement() {
     }
 
+    public Achievement(String title, String description, String icon) {
+		super();
+		this.title = title;
+		this.description = description;
+		this.icon = icon;
+		}
 
-
-    public Achievement(int achievementId, String title, String description, int value, byte[] icon,
+    public Achievement(String title, String description, String icon,
                        Collection<User> holders) {
         super();
-        this.achievementId = achievementId;
         this.title = title;
         this.description = description;
-        this.value = value;
         this.icon = icon;
         this.holders = holders;
     }
@@ -80,31 +81,19 @@ public class Achievement {
 
 
 
-    public int getValue() {
-        return value;
-    }
+    public String getIcon() {
+		return icon;
+	}
 
 
 
-    public void setValue(int value) {
-        this.value = value;
-    }
+	public void setIcon(String icon) {
+		this.icon = icon;
+	}
 
 
 
-    public byte[] getIcon() {
-        return icon;
-    }
-
-
-
-    public void setIcon(byte[] icon) {
-        this.icon = icon;
-    }
-
-
-
-    public Collection<User> getHolders() {
+	public Collection<User> getHolders() {
         return holders;
     }
 

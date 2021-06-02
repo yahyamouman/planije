@@ -1,0 +1,35 @@
+------------- Login ---------------------
+Done
+
+//should add filter
+-------------Registration----------------
+Done
+
+-------------Teams Page------------------
+Done
+
+/[RESOLVED]/Problem with showing joined teams
+// for each instead of just printing the team
+// leave team button
+// team dashboard button
+// logout button
+-------------Add Team--------------------
+Done
+
+// Cancel Button (Back)
+-------------Join Team-------------------
+Done
+
+// Fix error response for invalid code
+-------------Team Dashboard--------------
+
+
+	<plugin>
+    		<groupId>org.apache.tomcat.maven</groupId>
+    		<artifactId>tomcat7-maven-plugin</artifactId>
+    		<version>2.2</version>
+    		<configuration>
+      			<port>8080</port>
+      			<path>/planije2</path>
+    		</configuration>
+	</plugin>

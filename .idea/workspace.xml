@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c3f4d3bb-b6a3-4595-9945-6ebfe5d1d611" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/beans/Achievement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/beans/Achievement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/beans/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/beans/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/beans/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/dao/TaskDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/dao/TeamDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/dao/TeamDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/dao/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/dao/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/security/AuthenticationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/security/AuthenticationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/DoingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/servlet/DoingServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/DoneServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/servlet/DoneServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/ProfileServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/servlet/ProfileServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/RegisterServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/ToDoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/servlet/ToDoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/utility/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/utility/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/utility/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/utility/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/beans/Achievement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/beans/Achievement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/beans/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/beans/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/beans/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/beans/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/beans/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/beans/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/dao/TaskDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/dao/TaskDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/dao/TeamDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/dao/TeamDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/dao/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/dao/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/security/AuthenticationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/security/AuthenticationServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/security/UserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/security/UserDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/security/UserDetailsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/security/UserDetailsDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/servlet/DoingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/servlet/DoingServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/servlet/DoneServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/servlet/DoneServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/servlet/ProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/servlet/ProfileServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/servlet/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/servlet/ToDoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/servlet/ToDoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/utility/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/utility/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/utility/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/utility/HibernateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.project/planije2/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.project/planije2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/hibernate.cfg.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ozvFZ93QwYJKbaGO3itey6HBqT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3f4d3bb-b6a3-4595-9945-6ebfe5d1d611" name="Default Changelist" comment="" />
+      <created>1614302130402</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614302130402</updated>
+      <workItem from="1614302137744" duration="989000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

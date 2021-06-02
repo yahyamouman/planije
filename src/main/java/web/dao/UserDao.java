@@ -24,7 +24,7 @@ public class UserDao implements UserRepository {
     }
 
     @Override
-    public void updateUser(int id, String username, String firstName, String lastName, String email, String phone) {
+    public void updateUser(int id, String username, String firstName, String lastName, String email, String phone, String password) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         User u = (User) session.load(User.class, Integer.valueOf(id));
@@ -35,6 +35,7 @@ public class UserDao implements UserRepository {
         u.setLastName(lastName);
         u.setEmail(email);
         u.setPhone(phone);
+        u.setPassword(password);
 
         session.update(u);
         transaction.commit();

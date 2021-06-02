@@ -10,6 +10,7 @@ import javax.servlet.http.HttpSession;
 import org.hibernate.Session;
 
 import web.beans.Task;
+import web.beans.User;
 import web.dao.TaskDao;
 import web.security.UserDetails;
 import web.utility.HibernateUtil;
@@ -34,7 +35,15 @@ public class DoneServlet extends HttpServlet {
     	HttpSession session = request.getSession();
     	Session hSession = HibernateUtil.getSessionFactory().openSession();
     	UserDetails userDetails = (UserDetails) session.getAttribute("userDetails");
-    	request.setAttribute("tasks", taskDao.filterTasksByState((ArrayList<Task>) taskDao.getPersonalTasks(userDetails.getUserId()),"DONE"));
+    	User user = hSession.find(User.class, userDetails.getUserId());
+    	
+		ArrayList<Task> tasks = new ArrayList<Task>();
+		for(Task t : user.getOwnedTasks()){
+			  t.setLeft(taskDao.daysLeft(t));
+			  tasks.add(t);
+		}
+		
+    	request.setAttribute("tasks", taskDao.filterTasksByState((ArrayList<Task>) tasks,"DONE"));
     	hSession.close();
     	this.getServletContext().getRequestDispatcher( "/done.jsp" ).forward( request, response );
     }

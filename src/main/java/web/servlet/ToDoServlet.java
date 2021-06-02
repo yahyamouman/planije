@@ -35,7 +35,15 @@ public class ToDoServlet extends HttpServlet {
     	HttpSession session = request.getSession();
     	Session hSession = HibernateUtil.getSessionFactory().openSession();
     	UserDetails userDetails = (UserDetails) session.getAttribute("userDetails");
-    	request.setAttribute("tasks", taskDao.filterTasksByState((ArrayList<Task>) taskDao.getPersonalTasks(userDetails.getUserId()),"TODO"));
+    	User user = hSession.find(User.class, userDetails.getUserId());
+    	
+		ArrayList<Task> tasks = new ArrayList<Task>();
+		for(Task t : user.getOwnedTasks()){
+			  t.setLeft(taskDao.daysLeft(t));
+			  tasks.add(t);
+		}
+		
+    	request.setAttribute("tasks", taskDao.filterTasksByState((ArrayList<Task>) tasks,"TODO"));
     	hSession.close();
     	this.getServletContext().getRequestDispatcher( "/todo.jsp" ).forward( request, response );
     }

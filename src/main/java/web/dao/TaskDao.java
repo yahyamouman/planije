@@ -141,8 +141,11 @@ public class TaskDao implements TaskRepository {
     public int daysLeft(Task task){
         //get Current date
         long millis=System.currentTimeMillis();
+        long deadLine=task.getEndDate().getTime();
+        
         Date currentDate=new java.sql.Date(millis);
-        int days = task.getEndDate().compareTo(currentDate);
+        int days = (int) ((deadLine-millis) / (1000*60*60*24));
+        //int days = task.getEndDate().compareTo(currentDate);
         return days;
     }
 }

@@ -1,5 +1,6 @@
 package web.security;
 
+import web.dao.AchievementDao;
 import web.dao.TaskDao;
 
 import javax.servlet.RequestDispatcher;
@@ -15,9 +16,12 @@ public class AuthenticationServlet extends HttpServlet {
     private UserDetailsDao loginDao;
     private HttpSession session;
     private TaskDao taskDao;
+    private AchievementDao achievementDao;
 
     public void init() {
         loginDao = new UserDetailsDao();
+        achievementDao = new AchievementDao();
+        achievementDao.initAchievements();
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

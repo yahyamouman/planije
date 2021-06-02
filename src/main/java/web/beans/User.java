@@ -29,6 +29,8 @@ public class User {
     private String lastName;
 
     private String roles;
+    
+    private int exp;
 
     ///////////////////////////////////// Relationships ///////////////////////////////////////////////
 
@@ -203,6 +205,20 @@ public class User {
     public void setAchievements(Collection<Achievement> achievements) {
         this.achievements = achievements;
     }
+
+	public int getExp() {
+		return exp;
+	}
+
+	public void setExp(int exp) {
+		this.exp = exp;
+	}
+	
+	public void addExp(int exp) {
+		this.exp += exp;
+	}
+    
+    
 
 
 }

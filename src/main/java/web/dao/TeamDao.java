@@ -106,6 +106,7 @@ public class TeamDao implements TeamRepository {
     @Override
     public void leaveTeam(int userId, int teamId) {
         Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
         ArrayList<User> members;
         User user = session.find(User.class, userId);
         Team team = session.find(Team.class, teamId);
@@ -127,6 +128,7 @@ public class TeamDao implements TeamRepository {
         	user.getTeams().remove(team);
         	session.update(team);
         }
+        transaction.commit();
         session.update(user);
     }
     
